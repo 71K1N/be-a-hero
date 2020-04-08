@@ -41,6 +41,7 @@ module.exports = {
 
   },
   async delete(request, response) {
+    // tratar para quando ja tover sido excluido
     const {
       id
     } = request.params;

@@ -1,12 +1,15 @@
 const express = require("express");
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
+const {errors} = require('celebrate');
+
 const routes = require('./routes');
 
 //  - DEFINE QUE IREI UTILIZAR JSON COMO CORPO DE REQUISICAO
 app.use(cors())
 app.use(express.json());
 app.use(routes);
+app.use(errors());
 
 /**
  *  rota / recurso 
@@ -48,4 +51,4 @@ app.use(routes);
 //  console.log(params);
 //  ...
 
-app.listen(3333);
+module.exports = app;
