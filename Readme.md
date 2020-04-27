@@ -8,13 +8,15 @@
 
 ## FontEnd
 
-- [ ] Cadastro
+### Funcionalidades
 
-- [ ] Logar
+- Cadastro
 
-- [ ] Listar Casos
+- Logar
 
-- [ ] Registrar novo caso
+- Listar Casos
+
+- Registrar novo caso
 
   ### Dependencias
 
@@ -78,7 +80,7 @@ cd backend/
   npm install
   ```
 
-* Instalar migartions (database) [cria um banco de dados .sqlite]
+* Instalar migrations (database) [cria um banco de dados .sqlite]
 
   ```bash
   npx knex migrate:latest
@@ -92,9 +94,28 @@ cd backend/
 
 ### Mobile
 
+1. Instalar `expo-cli`
 
+```bash
+npm install -g expo-cli
+```
 
+2. instalar dependencias
 
+```bash
+npm install
+```
 
+3. Iniciar
 
+   ```bash
+   npm start
+   ```
 
+   ou
+
+   ```bash
+   expo start
+   ```
+
+   

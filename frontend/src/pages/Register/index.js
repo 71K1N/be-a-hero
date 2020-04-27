@@ -46,7 +46,7 @@ export default function Register() {
           </p>
           <Link to="/" className="back-link">
             <FiArrowLeft size={16} color="E02042" />
-            Não tenho cadastro
+            Login
           </Link>
         </section>
         <form onSubmit={handleRegister}>
@@ -62,7 +62,7 @@ export default function Register() {
             onChange={e => setEmail(e.target.value)}
           />
           <input
-            placeholder="Watsapp"
+            placeholder="Whatsapp"
             value={watsapp}
             onChange={e => setWatsapp(e.target.value)}
           />
